@@ -1,0 +1,38 @@
+@mixin flexbox(
+    $display: flex,
+    $direction: column,
+    $justifay: space-between,
+    $items: center
+) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justifay;
+    align-items: $items;
+}
+
+@mixin lists {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+@mixin links {
+    display: inline-block;
+    text-decoration-line: none;
+}
+
+@mixin btn {
+    border: none;
+    background-color: transparent;
+}
+
+@mixin transitions($name: color) {
+    transition: $name 0.4s linear;
+}
+
+@mixin inputs {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}

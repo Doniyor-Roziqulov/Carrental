@@ -1,0 +1,293 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.unper {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.unper__big-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unper__title {
+    color: $main-title-color;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.unper__text {
+    color: $main-link-color;
+    text-align: center;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.unper__small-title {
+    color: $main-title-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.unper__small-title::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/laptop.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.unper__small-title--two::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/Shield.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.unper__small-title--there::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/clock.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.unper__small-title--four::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/Wallet.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.unper__desc {
+    color: $main-link-color;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.unper__list {
+    @include lists;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.unper__item {
+    max-width: 387px;
+    border-radius: 20px;
+    background-color: $main-link-bg;
+    padding: 20px 30px 20px 15px;
+    transition: background-color 0.4s linear, color 0.4s linear;
+}
+
+.unper__item:hover {
+    background-color: $main-green-color;
+}
+
+.unper__item:hover .unper__small-title::after {
+    background-image: url(../images/Desktopwhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.unper__item:hover .unper__small-title--two::after {
+    background-image: url(../images/iconwhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.unper__item:hover .unper__small-title--there::after {
+    background-image: url(../images/persomwhete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.unper__item:hover .unper__small-title--four::after {
+    background-image: url(../images/filewhitte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.unper__item:hover .unper__small-title {
+    color: $main-white-color;
+}
+
+.unper__item:hover .unper__desc {
+    color: $main-white-color;
+}
+
+@media only screen and (min-width: 350px) {
+    .unper__title {
+        color: $main-title-color;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+    .unper__text {
+        color: $main-link-color;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .unper__small-title {
+        color: $main-title-color;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .unper__desc {
+        color: $main-link-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .unper__box {
+        max-width: 321px;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .unper__box {
+        max-width: 684px;
+    }
+
+    .unper__title {
+        font-size: 28px;
+    }
+
+    .unper__text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    .unper {
+        padding-bottom: 120px;
+    }
+
+    .unper__box {
+        max-width: 684px;
+    }
+
+    .unper__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .unper__item {
+        padding: 30px 30px 30px 24px;
+    }
+
+    .unper__title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .unper__item {
+        max-width: 590px;
+        padding: 40px 40px 40px 32px;
+    }
+
+    .unper__small-title {
+        font-size: 32px;
+    }
+
+    .unper__desc {
+        font-size: 16px;
+    }
+
+    .unper__title-box {
+        width: 354px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .unper__item {
+        max-width: 590px;
+        padding: 40px 100px 40px 32px;
+    }
+
+    .unper__list {
+        justify-content: space-around;
+    }
+
+    .unper__small-title::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: -60px;
+    }
+}
+
+@media only screen and (min-width: 1230px) {
+    .unper__item {
+        max-width: 590px;
+        padding: 40px 204px 40px 32px;
+    }
+
+    .unper {
+        padding-bottom: 160px;
+    }
+
+    .unper__list {
+        justify-content: space-between;
+    }
+
+    .unper__small-title::after {
+        right: -155px;
+    }
+}

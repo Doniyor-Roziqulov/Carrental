@@ -1,0 +1,51 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.breand {
+    padding-top: 95px;
+    padding-bottom: 80px;
+}
+
+.breand__img {
+    width: 100px;
+    height: 28px;
+}
+
+.breand__list {
+    @include lists;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: hidden;
+}
+
+.breand__title {
+    color: $main-title-color;
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 800px) {
+    .breand__title {
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+
+    .breand__list {
+        column-gap: 50px;
+    }
+
+    .breand__img {
+        width: 140px;
+        height: 40px;
+    }
+
+    .breand__list {
+        justify-content: space-between;
+    }
+}

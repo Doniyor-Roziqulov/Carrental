@@ -1,0 +1,428 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.dream {
+    padding-top: 102px;
+    padding-bottom: 100px;
+}
+
+.dream__title {
+    color: $main-title-color;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.dream__text {
+    color: $main-link-color;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.dream__list {
+    @include lists;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.dream__link {
+    @include links;
+    color: $main-title-color;
+    border-radius: 100px;
+    border: 1.5px solid #e5e7ea;
+    background-color: $main-white-color;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 18px;
+    transition: color 0.4s linear, background-color 0.4s linear;
+}
+
+.dream__link:hover {
+    background-color: $main-link-bg;
+}
+
+.dream__link:active {
+    color: $main-white-color;
+    background-color: $main-green-color;
+}
+
+.dream__link--active {
+    color: $main-white-color;
+    background-color: $main-green-color;
+}
+
+.dream__link--active:hover {
+    color: $main-title-color;
+    background-color: $main-link-bg;
+}
+
+.ford-list {
+    @include lists;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.ford-list__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ford-list__title {
+    color: $main-title-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.ford-list__text {
+    color: $main-link-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ford-list__inner-list {
+    @include lists;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 24px;
+    margin-top: 10px;
+}
+
+.ford-list__inner-item {
+    color: $main-title-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-left: 28px;
+}
+
+.ford-list__inner-item:first-child {
+    padding-right: 14px;
+}
+
+.ford-list__inner-item:first-child::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/men.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.ford-list__inner-item:nth-child(2)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/gear.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.ford-list__inner-item:nth-child(3)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/file.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.ford-list__inner-item:nth-child(4)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/petrol.svg);
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+.ford-list__img {
+    width: 210px;
+    height: 120px;
+}
+
+.ford-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: $main-link-bg;
+    padding: 24px 20px;
+    transition: color 0.4s linear, background-color 0.4s linear;
+}
+
+.ford-list__item:hover {
+    background-color: $main-green-color;
+}
+
+.ford-list__item:hover .ford-list__title {
+    color: $main-white-color;
+}
+
+.ford-list__item:hover .ford-list__text {
+    color: $main-white-color;
+}
+
+.ford-list__item:hover .ford-list__inner-item {
+    color: $main-white-color;
+}
+
+.ford-list__item:hover .ford-list__inner-item:first-child::before {
+    background-image: url(../images/menwhite.svg);
+}
+
+.ford-list__item:hover .ford-list__inner-item:nth-child(2)::before {
+    background-image: url(../images/gearwhite.svg);
+}
+
+.ford-list__item:hover .ford-list__inner-item:nth-child(3)::before {
+    background-image: url(../images/filewhite.svg);
+}
+
+.ford-list__item:hover .ford-list__inner-item:nth-child(4)::before {
+    background-image: url(../images/petrolwhite.svg);
+}
+
+.dream__all-link {
+    @include links;
+    color: $main-white-color;
+    border-radius: 100px;
+    background-color: $main-green-color;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+    padding: 15px 20px;
+    transition: color 0.4s linear, background-color 0.4s linear;
+}
+
+.dream__all-link:hover {
+    background-color: $main-green-hover;
+}
+
+.dream__all-link:active {
+    color: $main-title-color;
+    background-color: $main-link-bg;
+}
+
+.dream__box {
+    @include flexbox($justifay: null);
+}
+
+@media only screen and (min-width: 320px) {
+    .ford-list__inner-list {
+        column-gap: 40px;
+    }
+
+    .ford-list__img {
+        width: 225px;
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 340px) {
+    .ford-list__inner-list {
+        column-gap: 45px;
+    }
+
+    .ford-list__img {
+        width: 265px;
+        height: 156px;
+    }
+
+    .ford-list__inner-item {
+        font-size: 16px;
+    }
+
+    .ford-list__inner-item:first-child::before {
+        top: 0px;
+    }
+
+    .ford-list__inner-item:nth-child(2)::before {
+        top: 0px;
+    }
+
+    .ford-list__inner-item:nth-child(3)::before {
+        top: 0px;
+    }
+
+    .ford-list__inner-item:nth-child(4)::before {
+        top: 0px;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .ford-list__inner-list {
+        column-gap: 55px;
+    }
+
+    .ford-list__img {
+        width: 307px;
+        height: 174px;
+    }
+
+    .ford-list__item {
+        max-width: 387px;
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .ford-list__inner-list {
+        column-gap: 55px;
+    }
+
+    .ford-list__img {
+        width: auto;
+        height: auto;
+    }
+
+    .ford-list {
+        row-gap: 20px;
+    }
+
+    .ford-list__item {
+        max-width: 387px;
+        padding: 30px 24px 14px;
+    }
+
+    .ford-list__title {
+        font-size: 24px;
+    }
+
+    .ford-list__text {
+        font-size: 16px;
+    }
+
+    .ford-list__inner-list {
+        margin-bottom: 16px;
+    }
+
+    .dream__title {
+        color: $main-title-color;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .dream__text {
+        color: $main-link-color;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .dream__list {
+        margin-bottom: 24px;
+        column-gap: 16px;
+    }
+
+    .dream__link {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 505px) {
+    .dream__title {
+        font-size: 34px;
+    }
+
+    .dream__text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .dream__all-link {
+        font-size: 18px;
+        padding: 18px 30px;
+    }
+
+    .dream {
+        padding-top: 133px;
+        padding-bottom: 160px;
+    }
+
+    .ford-list__item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ford-list {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dream__title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .dream__text {
+        font-size: 16px;
+    }
+
+    .ford-list {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ford-list {
+        column-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    .ford-list {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+    .dream__link {
+        padding: 19px 40px;
+    }
+}

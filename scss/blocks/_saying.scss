@@ -1,0 +1,666 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.saying {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $main-link-bg;
+}
+
+.saying__big-box {
+    border-radius: 16px;
+    // padding: 24px 20px;
+    background-color: $main-white-color;
+}
+
+.saying-box {
+    padding: 24px 20px 0 20px;
+}
+
+.saying__link {
+    @include links;
+    color: #4285f4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 28px;
+    position: relative;
+}
+
+.saying__link::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/google.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.saying__title {
+    color: $main-title-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 131.579% */
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.saying__span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        #ea4335 19.83%,
+        #fbbc05 65%,
+        #34a853 82.29%,
+        #4285f4 100%
+    );
+}
+
+.saying__text {
+    color: $main-link-color;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.saying__icon {
+    @include links;
+    color: #d22a8a;
+    border-radius: 100px;
+    border: 1.5px solid var(--1, #d22a8a);
+    background-color: #fff;
+    margin-bottom: 24px;
+    padding: 12px 30px;
+    transition: color 0.4s linear, background-color 0.4s linear;
+}
+
+.saying__icon:hover {
+    background: #d22a8a;
+    color: #fff;
+}
+
+.sagittis {
+    @include lists;
+    display: flex;
+    column-gap: 10px;
+    background-color: $main-green-color;
+    padding: 20px 20px 40px 20px;
+    border-radius: 0px 0px 16px 16px;
+    overflow-x: hidden;
+}
+
+.sagittis__item {
+    min-width: 208px;
+    width: 100%;
+    background-color: $main-white-color;
+    border-radius: 16px;
+    padding: 8px;
+    position: relative;
+}
+
+.sagittis__star {
+    color: $main-title-color;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+}
+
+.sagittis__star::after {
+    content: "";
+    width: 122px;
+    height: 20px;
+    background-image: url(../images/stars.svg);
+    position: absolute;
+    right: -130px;
+}
+
+.sagittis__star::before {
+    content: "";
+    width: 194px;
+    height: 1.5px;
+    background-color: #e5e7ea;
+    position: absolute;
+    top: -24px;
+    right: -138px;
+}
+
+.sagittis__star--two::after {
+    content: "";
+    width: 122px;
+    height: 20px;
+    background-image: url(../images/starstwo.svg);
+    position: absolute;
+    right: -130px;
+}
+
+.sagittis__bold {
+    color: $main-title-color;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.sagittis__mail {
+    @include links;
+    color: $main-link-color;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sagittis__desc {
+    color: $main-title-color;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.sagittis__desc--two {
+    margin-bottom: 130px;
+}
+
+.sagittis__desc--there {
+    margin-bottom: 70px;
+}
+
+.sagittis__box {
+    padding-left: 40px;
+    position: relative;
+}
+
+.sagittis__box::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/ava.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.sagittis__box--two::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/avacom.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.sagittis__box--there::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/avathere.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.sagittis__box::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/socials.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: -3px;
+}
+
+.sagittis__line {
+    display: inline-block;
+    min-width: 206px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.4;
+    background: $main-white-color;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.sagittis__small {
+    display: inline-block;
+    content: "";
+    width: 120px;
+    height: 4px;
+    border-radius: 10px;
+    background: $main-white-color;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 6;
+}
+
+.sagittis__btn {
+    display: none;
+}
+
+.sagittis__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 360px) {
+    .saying__title {
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px; /* 131.579% */
+    }
+
+    .sagittis__item {
+        min-width: 290px;
+    }
+
+    .sagittis__box {
+        margin-bottom: 14px;
+    }
+
+    .saying__text {
+        font-size: 14px;
+    }
+
+    .saying__icon {
+        padding: 18px 50px;
+    }
+
+    .sagittis__bold {
+        font-size: 14px;
+    }
+
+    .sagittis__star {
+        font-size: 14px;
+    }
+
+    .sagittis__mail {
+        font-size: 12px;
+    }
+
+    .sagittis__desc {
+        font-size: 14px;
+    }
+
+    .sagittis__desc--two {
+        margin-bottom: 150px;
+    }
+
+    .sagittis__desc--there {
+        margin-bottom: 90px;
+    }
+
+    .sagittis__line {
+        display: inline-block;
+        min-width: 290px;
+        height: 4px;
+        border-radius: 10px;
+        opacity: 0.4;
+        background: $main-white-color;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+
+    .sagittis__small {
+        display: inline-block;
+        content: "";
+        width: 130px;
+        height: 4px;
+        border-radius: 10px;
+        background: $main-white-color;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        z-index: 6;
+    }
+
+    .sagittis__star::before {
+        content: "";
+        width: 265px;
+        height: 1.5px;
+        background-color: #e5e7ea;
+        position: absolute;
+        top: -24px;
+        right: -188px;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    .sagittis__bold {
+        margin-bottom: 5px;
+    }
+
+    .sagittis__box {
+        padding-left: 50px;
+    }
+
+    .sagittis__item {
+        min-width: 326px;
+        padding: 16px;
+    }
+
+    .sagittis {
+        padding: 20px 0 40px 16px;
+    }
+
+    .sagittis__line {
+        display: inline-block;
+        min-width: 326px;
+        height: 4px;
+        border-radius: 10px;
+        opacity: 0.4;
+        background: $main-white-color;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+
+    .sagittis__small {
+        display: inline-block;
+        content: "";
+        width: 140px;
+        height: 4px;
+        border-radius: 10px;
+        background: $main-white-color;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        z-index: 6;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .sagittis__bold {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .sagittis__mail {
+        font-size: 14px;
+    }
+
+    .sagittis__box {
+        padding-left: 50px;
+    }
+
+    .sagittis__item {
+        min-width: 420px;
+        padding: 16px;
+    }
+
+    .sagittis__desc {
+        margin-bottom: 50px;
+    }
+
+    .sagittis__desc--two {
+        margin-bottom: 129px;
+    }
+
+    .sagittis__desc--there {
+        margin-bottom: 88px;
+    }
+
+    .sagittis {
+        padding: 30px 0 96px 24px;
+        column-gap: 20px;
+    }
+
+    .sagittis__line {
+        display: inline-block;
+        min-width: 326px;
+        height: 4px;
+        border-radius: 10px;
+        opacity: 0.4;
+        background: $main-white-color;
+        position: absolute;
+        left: 0;
+        bottom: -52px;
+    }
+
+    .sagittis__star::before {
+        content: "";
+        width: 375px;
+        height: 1.5px;
+        background-color: #e5e7ea;
+        position: absolute;
+        top: -24px;
+        right: -297px;
+    }
+
+    .sagittis__small {
+        display: inline-block;
+        content: "";
+        width: 140px;
+        height: 4px;
+        border-radius: 10px;
+        background: $main-white-color;
+        position: absolute;
+        bottom: -52px;
+        left: 0;
+        z-index: 6;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .sagittis__line {
+        min-width: 630px;
+    }
+
+    .saying__title-box {
+        max-width: 320px;
+    }
+
+    .saying__span {
+        display: inline-block;
+        width: 2px;
+        height: 108px;
+    }
+
+    .saying__text {
+        margin-top: 0;
+    }
+
+    .saying__hear-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .saying__title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px; /* 150% */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .sagittis__small {
+        width: 212px;
+    }
+
+    .sagittis__btn {
+        display: block;
+        @include btn;
+        width: 36px;
+        height: 36px;
+        border-radius: 100px;
+        background-color: $main-white-color;
+        background-image: url(../images/rightbtn.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: -68px;
+        right: -257px;
+        transition: background-color 0.4s linear;
+    }
+
+    .sagittis__btn--two {
+        background-image: url(../images/leftbtn.svg);
+        position: absolute;
+        bottom: -68px;
+        right: -305px;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    .saying__hear-box {
+        justify-content: space-around;
+    }
+
+    .saying__link {
+        margin-left: 45px;
+    }
+
+    .sagittis__btn {
+        bottom: -68px;
+        right: -333px;
+    }
+
+    .sagittis__btn--two {
+        bottom: -68px;
+        right: -380px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .saying__big-box {
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    .saying__hear-box {
+        flex-direction: column;
+    }
+
+    .saying__title {
+        font-size: 25px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+
+    .saying__sed-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sagittis__item {
+        height: 333px;
+    }
+    .saying-box {
+        padding: 70px;
+    }
+
+    .saying__text {
+        margin-top: 30px;
+    }
+
+    .sagittis {
+        height: 100%;
+        padding: 50px 0 40px 40px;
+    }
+    .saying__span {
+        width: 100%;
+        height: 2px;
+    }
+
+    .saying__link {
+        margin-left: 0;
+    }
+
+    .sagittis__line {
+        min-width: 480px;
+    }
+
+    .sagittis__btn {
+        bottom: -68px;
+        right: -115px;
+    }
+
+    .sagittis__btn--two {
+        bottom: -68px;
+        right: -160px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .saying__title {
+        font-size: 38px;
+    }
+
+    .saying__hear-box {
+        align-items: flex-start;
+    }
+
+    .saying-box {
+        min-width: 470px;
+    }
+
+    .saying__icon {
+        margin-bottom: 0;
+    }
+
+    .sagittis__line {
+        min-width: 420px;
+    }
+
+    .sagittis__small {
+        width: 140px;
+    }
+
+    .sagittis__btn {
+        bottom: -68px;
+        right: -64px;
+    }
+
+    .sagittis__btn--two {
+        bottom: -68px;
+        right: -110px;
+    }
+
+    .saying {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sagittis__line {
+        min-width: 544px;
+    }
+
+    .sagittis__small {
+        width: 140px;
+    }
+
+    .sagittis__btn {
+        bottom: -68px;
+        right: -183px;
+    }
+
+    .sagittis__btn--two {
+        bottom: -68px;
+        right: -235px;
+    }
+}

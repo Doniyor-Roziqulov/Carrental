@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car rental</title>
+        <link rel="stylesheet" href="./stayls/main.min.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__box">
+                    <a href="./index.html">
+                        <img
+                            src="./images/logo.svg"
+                            alt="Car rental's logo"
+                            width="150"
+                            height="40" />
+                    </a>
+                    <button
+                        class="site-header__btn js-menu-btn"
+                        type="button"></button>
+                    <div class="site-header__inner-box inner-box">
+                        <nav class="inner-box__navbar">
+                            <ul class="inner-box__list">
+                                <li class="inner-box__item">
+                                    <a class="inner-box__link" href="#"
+                                        >Categories</a
+                                    >
+                                </li>
+                                <li class="inner-box__item">
+                                    <a
+                                        class="inner-box__link inner-box__link--one"
+                                        href="#"
+                                        >About Us</a
+                                    >
+                                    <ul class="inner-box__innerlist">
+                                        <li class="inner-box__inneritem">
+                                            <a
+                                                class="inner-box__new inner-box__new--one"
+                                                href="#"
+                                                >News</a
+                                            >
+                                        </li>
+                                        <li class="inner-box__inneritem">
+                                            <a
+                                                class="inner-box__new inner-box__new--two"
+                                                href="#"
+                                                >Careers</a
+                                            >
+                                        </li>
+                                        <li class="inner-box__inneritem">
+                                            <a class="inner-box__new" href="#"
+                                                >Locations</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="inner-box__item">
+                                    <a
+                                        class="inner-box__link inner-box__link--one"
+                                        href="#"
+                                        >Help center</a
+                                    >
+                                    <ul class="inner-box__innerlist">
+                                        <li class="inner-box__inneritem">
+                                            <a
+                                                class="inner-box__new inner-box__new--there"
+                                                href="#"
+                                                >FAQ</a
+                                            >
+                                        </li>
+                                        <li class="inner-box__inneritem">
+                                            <a
+                                                class="inner-box__new inner-box__new--four"
+                                                href="#"
+                                                >Contact us</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="inner-box__small-box">
+                            <a class="inner-box__tel" href="tel:+18554200000"
+                                >+1 855 420 0000</a
+                            >
+                            <div class="inner-box__btn-box">
+                                <button
+                                    class="inner-box__btn js-switch-btn"
+                                    type="button"></button>
+                                <a class="inner-box__login" href="#">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="site-main">
+            <section class="hero" id="siteheader">
+                <div class="container">
+                    <div class="hero__box">
+                        <h1 class="visually-hidden" title="CAR RENTAL ONLINE">
+                            CAR RENTAL ONLINE
+                        </h1>
+                        <div class="hero__small-box">
+                            <h2 class="hero__title" title="Compact cars">
+                                Compact cars
+                            </h2>
+                            <p class="hero__text">
+                                Rent cars as you are comfortable and where you
+                                are comfortable.
+                            </p>
+                        </div>
+                        <div class="hero__span-box">
+                            <span class="hero__span">
+                                <span class="hero__one-spend"></span>
+                                <span class="hero__spend"></span>
+                                <span class="hero__spend"></span>
+                            </span>
+                            <div class="hero__btn-box">
+                                <button class="hero__one-btn"></button>
+                                <button class="hero__two-btn"></button>
+                            </div>
+                        </div>
+                        <form
+                            class="hero__form"
+                            action="https://echo.htmlacademy.ru/"
+                            method="get">
+                            <input
+                                class="hero__input"
+                                type="search"
+                                name="search"
+                                required
+                                aria-label="search"
+                                placeholder="Find the car of your dreams" />
+                            <button class="hero__btn" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="dream">
+                <div class="container">
+                    <div class="dream__box">
+                        <div class="dream__small-box">
+                            <h2
+                                class="dream__title"
+                                title="Choose the car of your dreams">
+                                Choose the car of your dreams
+                            </h2>
+                            <p class="dream__text">
+                                We provide our customers with the most
+                                incredible driving emotions. <br />
+                                That is why there are only world-class cars in
+                                our fleet
+                            </p>
+                        </div>
+                        <ul class="dream__list">
+                            <li class="dream__item">
+                                <a
+                                    class="dream__link dream__link--active"
+                                    href="#"
+                                    >Compact</a
+                                >
+                            </li>
+                            <li class="dream__item">
+                                <a class="dream__link" href="#">Sports cars</a>
+                            </li>
+                            <li class="dream__item">
+                                <a class="dream__link" href="#">Vans</a>
+                            </li>
+                        </ul>
+                        <ul class="dream__two-list ford-list">
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Ford Fiesta">
+                                        Ford Fiesta
+                                    </h3>
+                                    <p class="ford-list__text">Economy Car</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/dreamone@1x.png"
+                                    srcset="
+                                        ./images/dreamone@1x.png 1x,
+                                        ./images/dreamone@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Nissan Versa">
+                                        Nissan Versa
+                                    </h3>
+                                    <p class="ford-list__text">Compact Car</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/nissan@1x.png"
+                                    srcset="
+                                        ./images/nissan@1x.png 1x,
+                                        ./images/nissan@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Toyota Corolla">
+                                        Toyota Corolla
+                                    </h3>
+                                    <p class="ford-list__text">Mid-size Car</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/corolla@1x.png"
+                                    srcset="
+                                        ./images/corolla@1x.png 1x,
+                                        ./images/corolla@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Nissan Rogue">
+                                        Nissan Rogue
+                                    </h3>
+                                    <p class="ford-list__text">Mid-size SUV</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/rogue@1x.png"
+                                    srcset="
+                                        ./images/rogue@1x.png 1x,
+                                        ./images/rogue@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Chevy Traverse">
+                                        Chevy Traverse
+                                    </h3>
+                                    <p class="ford-list__text">Full-size SUV</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/chevy@1x.png"
+                                    srcset="
+                                        ./images/chevy@1x.png 1x,
+                                        ./images/chevy@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="ford-list__item">
+                                <div class="ford-list__box">
+                                    <h3
+                                        class="ford-list__title"
+                                        title="Nissan Altima">
+                                        Nissan Altima
+                                    </h3>
+                                    <p class="ford-list__text">Full-size SUV</p>
+                                </div>
+                                <img
+                                    class="ford-list__img"
+                                    src="./images/altima@1x.png"
+                                    srcset="
+                                        ./images/altima@1x.png 1x,
+                                        ./images/altima@2x.png 2x
+                                    "
+                                    alt="Ford Fiesta" />
+                                <ul class="ford-list__inner-list">
+                                    <li class="ford-list__inner-item">
+                                        5 Seats
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        Automatic
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        21+ Years
+                                    </li>
+                                    <li class="ford-list__inner-item">
+                                        1-lit / 2.5 km
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="dream__all-link" href="#">View all cars</a>
+                    </div>
+                </div>
+            </section>
+            <section class="saying">
+                <div class="container">
+                    <div class="saying__big-box">
+                        <div class="saying-box">
+                            <a class="saying__link" href="#">From Google</a>
+                            <div class="saying__hear-box">
+                                <div class="saying__title-box">
+                                    <h2
+                                        class="saying__title"
+                                        title="Hear what the community is saying">
+                                        Hear what the community is saying
+                                    </h2>
+                                </div>
+                                <span class="saying__span"></span>
+                                <div class="saying__more-box">
+                                    <p class="saying__text">
+                                        More interesting reviews on Instagram
+                                    </p>
+                                    <a class="saying__icon" href="#"
+                                        >Instagram</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="saying__sed-box">
+                            <ul class="saying__list sagittis">
+                                <li class="sagittis__item">
+                                    <div class="sagittis__box">
+                                        <strong class="sagittis__bold"
+                                            >Savannah Nguyen</strong
+                                        >
+                                        <a
+                                            class="sagittis__mail"
+                                            href="mailto:savannahnguyen@gmail.com"
+                                            >savannahnguyen@gmail.com</a
+                                        >
+                                    </div>
+                                    <p class="sagittis__desc">
+                                        Sagittis sed tortor, elementum vitae
+                                        varius sodales consectetur. Vitae arcu
+                                        ut morbi bibendum ullamcorper feugiat.
+                                        Venenatis hendrerit cursus egestas sit
+                                        ornare nunc vulputate aliquam sapien.
+                                        Pulvinar nunc consectetur nibh
+                                        consectetur mollis mauris est mauris
+                                        amet. Sed hac vehicula id et dui morbi
+                                        quam pulvinar condimentum. Senectus sed
+                                        varius interdum nunc, arcu vulputate
+                                        massa.
+                                    </p>
+                                    <strong class="sagittis__star"
+                                        >Star rating:</strong
+                                    >
+                                    <div>
+                                        <span>
+                                            <span class="sagittis__line">
+                                            </span>
+                                            <span
+                                                class="sagittis__small"></span>
+                                        </span>
+                                        <span>
+                                            <button
+                                                class="sagittis__btn"></button>
+                                            <button
+                                                class="sagittis__btn sagittis__btn--two"></button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="sagittis__item">
+                                    <div
+                                        class="sagittis__box sagittis__box--two">
+                                        <strong class="sagittis__bold"
+                                            >Ronald Richards</strong
+                                        >
+                                        <a
+                                            class="sagittis__mail"
+                                            href="mailto:ronaldrichards@gmail.com"
+                                            >ronaldrichards@gmail.com</a
+                                        >
+                                    </div>
+                                    <p
+                                        class="sagittis__desc sagittis__desc--two">
+                                        Placerat pulvinar in amet sem id gravida
+                                        nisi leo. A dignissim est pellentesque
+                                        mi quisque vel mi ut. Porttitor blandit
+                                        auctor odio a ornare felis tortor
+                                        bibendum molestie.
+                                    </p>
+                                    <strong
+                                        class="sagittis__star sagittis__star--two"
+                                        >Star rating:</strong
+                                    >
+                                </li>
+                                <li class="sagittis__item">
+                                    <div
+                                        class="sagittis__box sagittis__box--there">
+                                        <strong class="sagittis__bold"
+                                            >Kristin Watson</strong
+                                        >
+                                        <a
+                                            class="sagittis__mail"
+                                            href="mailto:kristinwatson@gmail.com"
+                                            >kristinwatson@gmail.com</a
+                                        >
+                                    </div>
+                                    <p
+                                        class="sagittis__desc sagittis__desc--there">
+                                        Id adipiscing vulputate arcu pretium
+                                        dignissim. Felis vulputate tellus velit
+                                        consectetur. Congue convallis aliquam
+                                        eget ullamcorper quam pellentesque
+                                        cursus. Dictumst mauris ac, quis orci
+                                        morbi ultrices faucibus volutpat mauris.
+                                        Bibendum sed ut lectus facilisi amet
+                                        orci. Interdum massa orci urna id ac
+                                        cras arcu.
+                                    </p>
+                                    <strong
+                                        class="sagittis__star sagittis__star--there"
+                                        >Star rating:</strong
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="breand">
+                <div class="container">
+                    <div class="breand__box">
+                        <h2
+                            class="breand__title"
+                            title="More than 50 brands of cars">
+                            More than 50 brands of cars
+                        </h2>
+                        <ul class="breand__list">
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/ford.svg"
+                                    alt="Ford" />
+                            </li>
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/nissanlogo.svg"
+                                    alt="Nissan" />
+                            </li>
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/toyota.svg"
+                                    alt="Toyota" />
+                            </li>
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/dodge.svg"
+                                    alt="Dodge" />
+                            </li>
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/hyndailogo.png"
+                                    srcset="
+                                        ./images/hyndailogo.png    1x,
+                                        ./images/hyndailogo@2x.png
+                                    "
+                                    alt="Hyundi" />
+                            </li>
+                            <li class="breand__item">
+                                <img
+                                    class="breand__img"
+                                    src="./images/jeep.svg"
+                                    alt="Jeep" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="unper">
+                <div class="container">
+                    <div class="unper__big-box">
+                        <div class="unper__box">
+                            <h2
+                                class="unper__title"
+                                title="Unparalleled service">
+                                Unparalleled service
+                            </h2>
+                            <p class="unper__text">
+                                Whether you are looking for Newark Airport car
+                                rental, an insurance replacement vehicle or
+                                minivan to take on vacation Car rental has it
+                                all.
+                            </p>
+                        </div>
+                        <ul class="unper__list">
+                            <li class="unper__item">
+                                <h3
+                                    class="unper__small-title"
+                                    title=" Book online, pay online">
+                                    Book online, <br />
+                                    pay online
+                                </h3>
+                                <div class="unper__title-box">
+                                    <p class="unper__desc">
+                                        Complete the booking process A-Z, with
+                                        our easy online system
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="unper__item">
+                                <h3
+                                    class="unper__small-title unper__small-title--two"
+                                    title="Guaranteed car reservation">
+                                    Guaranteed car <br />
+                                    reservation
+                                </h3>
+                                <div class="unper__title-box">
+                                    <p class="unper__desc">
+                                        When you book with Car rental, you can
+                                        be confident your car will be waiting
+                                        for you
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="unper__item">
+                                <h3
+                                    class="unper__small-title unper__small-title--there"
+                                    title="Unparalleled customer service">
+                                    Unparalleled <br />
+                                    customer service
+                                </h3>
+                                <div class="unper__title-box">
+                                    <p class="unper__desc">
+                                        We're here to help. We pride ourselves
+                                        in our customer service
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="unper__item">
+                                <h3
+                                    class="unper__small-title unper__small-title--four"
+                                    title="No reservation or booking fees">
+                                    No reservation <br />
+                                    or booking fees
+                                </h3>
+                                <div class="unper__title-box">
+                                    <p class="unper__desc">
+                                        Complete the booking process A-Z, with
+                                        our easy online system
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="safe">
+                <div class="container">
+                    <div class="safe__big-box">
+                        <div class="safe__box">
+                            <div class="safe__small-box">
+                                <h2
+                                    class="safe__title"
+                                    title="Car rental keeps you safe">
+                                    Car rental keeps you safe
+                                </h2>
+                            </div>
+                            <p class="safe__text">
+                                The safety of our employees and renters is our
+                                number one priority. In addition to being
+                                confident your vehicle is cleaned and sanitized
+                                every time you rent, you can also feel confident
+                                that we will take every opportunity to enhance
+                                the health and safety measures currently
+                                practiced in our operations.
+                            </p>
+                        </div>
+                        <ul class="safe__list">
+                            <li class="safe__item">
+                                <strong class="safe__bold"
+                                    >Every car is thoroughly sanitized and
+                                    cleaned</strong
+                                >
+                            </li>
+                            <li class="safe__item safe__item--two">
+                                <strong class="safe__bold"
+                                    >All of our employees wear masks</strong
+                                >
+                            </li>
+                            <li class="safe__item safe__item--there">
+                                <strong class="safe__bold"
+                                    >We stay up to date with all protocol from
+                                    the CDC</strong
+                                >
+                            </li>
+                        </ul>
+                        <img
+                            class="safe__img"
+                            src="./images/wepik@1x.png"
+                            alt="Men's picture"
+                            srcset="
+                                ./images/wepik@1x.png 1x,
+                                ./images/wepik@2x.png 2x
+                            " />
+                    </div>
+                </div>
+            </section>
+            <footer class="site-footer">
+                <div class="footer-start">
+                    <div class="container">
+                        <div class="site-footer__big">
+                            <div class="site-footer__box">
+                                <div class="site-footer__rental">
+                                    <div class="site-footer__logo-box">
+                                        <a href="./index.html">
+                                            <img
+                                                class="logo"
+                                                src="./images/logofooter.svg"
+                                                alt="Car rental's logo" />
+                                        </a>
+                                        <p class="site-footer__text">
+                                            Car rental offers a wide range of
+                                            cars available for rent in Newark
+                                            EWR Airport NJ. We pride ourselves
+                                            in our customer service, and
+                                            hassle-free renting experience.
+                                        </p>
+                                    </div>
+                                    <span class="site-footer__span"
+                                        >© 2022 Car rental <br />
+                                        Terms & Conditions</span
+                                    >
+                                </div>
+                                <div class="site-footer__bold-box">
+                                    <div class="site-footer__main main-box">
+                                        <div class="main-box__box">
+                                            <strong class="main-box__bold"
+                                                >Main</strong
+                                            >
+                                            <ul class="main-box__list">
+                                                <li class="main-box__item">
+                                                    <a
+                                                        class="main-box__link"
+                                                        href="#"
+                                                        >My Bookings</a
+                                                    >
+                                                </li>
+                                                <li class="main-box__item">
+                                                    <a
+                                                        class="main-box__link"
+                                                        href="#"
+                                                        >Reservation</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-box__box">
+                                            <strong class="main-box__bold"
+                                                >Categories</strong
+                                            >
+                                            <ul class="main-box__list">
+                                                <li class="main-box__item">
+                                                    <a
+                                                        class="main-box__link"
+                                                        href="#"
+                                                        >Compact</a
+                                                    >
+                                                </li>
+                                                <li class="main-box__item">
+                                                    <a
+                                                        class="main-box__link"
+                                                        href="#"
+                                                        >Sports cars</a
+                                                    >
+                                                </li>
+                                                <li class="main-box__item">
+                                                    <a
+                                                        class="main-box__link"
+                                                        href="#"
+                                                        >Vans</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="site-footer__inner">
+                                        <div>
+                                            <strong class="site-footer__bold"
+                                                >Company</strong
+                                            >
+                                            <ul class="site-footer__list">
+                                                <li>
+                                                    <a
+                                                        class="site-footer__link"
+                                                        href="#"
+                                                        >About us</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="site-footer__link"
+                                                        href="#"
+                                                        >Careers</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="site-footer__link"
+                                                        href="#"
+                                                        >News</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="site-footer__link"
+                                                        href="#"
+                                                        >Contact us</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <strong class="site-footer__bold"
+                                                >Our Locations</strong
+                                            >
+                                            <address
+                                                class="site-footer__address">
+                                                <ul class="site-footer__list">
+                                                    <li>
+                                                        <a
+                                                            class="site-footer__link"
+                                                            href="https://maps.app.goo.gl/7mBDe6PfGKuxfznc6"
+                                                            target="_blank"
+                                                            >2118 Thornridge
+                                                            Cir. Syracuse</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="site-footer__link"
+                                                            href="https://maps.app.goo.gl/87TsTBH1CobQbHfF8"
+                                                            target="_blank"
+                                                            >4140 Parker Rd.
+                                                            Allentown</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="site-footer__link"
+                                                            href="https://maps.app.goo.gl/MqFvyTWE5vSDvmTd7"
+                                                            target="_blank"
+                                                            >4517 Washington
+                                                            Ave.</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <div class="container">
+                        <div class="site-footer__end">
+                            <div class="site-footer__contact">
+                                <div>
+                                    <strong class="site-footer__bold"
+                                        >Contact</strong
+                                    >
+                                    <ul class="main-box__list">
+                                        <li>
+                                            <a
+                                                class="site-footer__link"
+                                                href="tel:+18554200000"
+                                                >+1 855 420 0000</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="site-footer__link"
+                                                href="mailto:carrental@gmail.com"
+                                                >carrental@gmail.com</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong class="site-footer__bold"
+                                        >Hours of operation</strong
+                                    >
+                                    <ul class="main-box__list">
+                                        <li>
+                                            <p class="site-footer__link-text">
+                                                <time datetime="08:00"
+                                                    >8:00</time
+                                                >
+                                                -
+                                                <time datetime="21:00"
+                                                    >21:00</time
+                                                >
+                                                Mon-Sat
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="site-footer__link-text">
+                                                <time datetime="09:00"
+                                                    >9:00</time
+                                                >
+                                                -
+                                                <time datetime="15:00"
+                                                    >15:00</time
+                                                >
+                                                Sundays
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="site-footer__link-box">
+                                <strong class="site-footer__bold"
+                                    >Social network</strong
+                                >
+                                <ul class="site-footer__iconlist">
+                                    <li>
+                                        <a
+                                            class="site-footer__icon site-footer__icon--one"
+                                            href="https://www.instagram.com/"
+                                            target="_blank">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none">
+                                                <path
+                                                    d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904 3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639 2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036 0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z"
+                                                    fill="currentcolor" />
+                                                <path
+                                                    d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 11.8072 13.3735 10 13.3735Z"
+                                                    fill="currentcolor" />
+                                                <path
+                                                    d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012 3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z"
+                                                    fill="currentcolor" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="site-footer__icon site-footer__icon--two"
+                                            href="https://twitter.com/?lang=ru"
+                                            target="_blank"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="16"
+                                                viewBox="0 0 20 16"
+                                                fill="none">
+                                                <path
+                                                    d="M19.6 1.89999C18.9 2.19999 18.1 2.4 17.3 2.5C18.1 2 18.8 1.2 19.1 0.300003C18.3 0.800003 17.5 1.1 16.5 1.3C15.8 0.500003 14.7 0 13.6 0C11.4 0 9.59999 1.8 9.59999 4C9.59999 4.3 9.6 4.59999 9.7 4.89999C6.4 4.69999 3.39999 3.1 1.39999 0.699997C1.09999 1.3 0.899994 2 0.899994 2.7C0.899994 4.1 1.6 5.3 2.7 6C2 6 1.39999 5.8 0.899994 5.5C0.899994 7.4 2.29999 9.09999 4.09999 9.39999C3.79999 9.49999 3.4 9.5 3 9.5C2.7 9.5 2.5 9.49999 2.2 9.39999C2.7 11 4.2 12.2 6 12.2C4.6 13.3 2.9 13.9 1 13.9C0.7 13.9 0.4 13.9 0 13.8C1.8 14.9 3.9 15.6 6.2 15.6C13.6 15.6 17.6 9.5 17.6 4.2V3.7C18.4 3.4 19.1 2.69999 19.6 1.89999Z"
+                                                    fill="currentcolor" /></svg
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="site-footer__icon site-footer__icon--there"
+                                            href="https://www.facebook.com/"
+                                            target="_blank"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="12"
+                                                height="23"
+                                                viewBox="0 0 12 23"
+                                                fill="none">
+                                                <path
+                                                    d="M7.65708 12.3648H11.3793L11.9637 8.56055H7.65632V6.48134C7.65632 4.90099 8.16957 3.49962 9.63891 3.49962H12V0.179741C11.5852 0.123382 10.7078 0 9.04996 0C5.58819 0 3.55867 1.8393 3.55867 6.0297V8.56055H0V12.3648H3.55867V22.821C4.26344 22.9276 4.97729 23 5.71007 23C6.37245 23 7.01893 22.9391 7.65708 22.8522V12.3648Z"
+                                                    fill="currentcolor" /></svg
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="site-footer__icon site-footer__icon--four"
+                                            href="https://www.whatsapp.com/?lang=ru_RU"
+                                            target="_blank"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="21"
+                                                height="21"
+                                                viewBox="0 0 21 21"
+                                                fill="none">
+                                                <path
+                                                    d="M17.9268 3.0625C15.9512 1.09375 13.3171 0 10.5366 0C4.7561 0 0.0731696 4.66667 0.0731696 10.4271C0.0731696 12.25 0.585366 14.0729 1.46341 15.6042L0 21L5.56098 19.5417C7.09756 20.3438 8.78049 20.7812 10.5366 20.7812C16.3171 20.7812 21 16.1146 21 10.3542C20.9268 7.65625 19.9024 5.03125 17.9268 3.0625ZM15.5854 14.1458C15.3659 14.7292 14.3415 15.3125 13.8293 15.3854C13.3902 15.4583 12.8049 15.4583 12.2195 15.3125C11.8537 15.1667 11.3415 15.0208 10.7561 14.7292C8.12195 13.6354 6.43903 11.0104 6.29268 10.7917C6.14634 10.6458 5.19512 9.40625 5.19512 8.09375C5.19512 6.78125 5.85366 6.19792 6.07317 5.90625C6.29268 5.61458 6.58536 5.61458 6.80488 5.61458C6.95122 5.61458 7.17073 5.61458 7.31707 5.61458C7.46341 5.61458 7.68293 5.54167 7.90244 6.05208C8.12195 6.5625 8.63414 7.875 8.70731 7.94792C8.78049 8.09375 8.78049 8.23958 8.70731 8.38542C8.63414 8.53125 8.56097 8.67708 8.41463 8.82292C8.26829 8.96875 8.12195 9.1875 8.04878 9.26042C7.90244 9.40625 7.7561 9.55208 7.90244 9.77083C8.04878 10.0625 8.56097 10.8646 9.36585 11.5937C10.3902 12.4687 11.1951 12.7604 11.4878 12.9063C11.7805 13.0521 11.9268 12.9792 12.0732 12.8333C12.2195 12.6875 12.7317 12.1042 12.878 11.8125C13.0244 11.5208 13.2439 11.5938 13.4634 11.6667C13.6829 11.7396 15 12.3958 15.2195 12.5417C15.5122 12.6875 15.6585 12.7604 15.7317 12.8333C15.8049 13.0521 15.8049 13.5625 15.5854 14.1458Z"
+                                                    fill="currentcolor" /></svg
+                                        ></a>
+                                    </li>
+                                </ul>
+                                <a
+                                    class="site-footer__header"
+                                    href="#siteheader"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
